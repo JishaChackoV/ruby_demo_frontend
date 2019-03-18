@@ -48,7 +48,10 @@
     "redux": "^4.0.0",
     "redux-persist": "^5.9.1",
     "redux-saga": "^0.16.0",
-    "styled-components": "^3.4.9"
+    "styled-components": "^3.4.9",
+    "babel/preset-env":"^7.3.4",
+    "babel/core":"7.3.4"
+
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src/scss/ --include-path ./node_modules src/ -o src/",
@@ -64,6 +67,8 @@
     "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "@types/lodash": "^4.14.112"
   }
 }
